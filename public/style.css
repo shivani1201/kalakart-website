@@ -1,0 +1,19 @@
+:root{--t:#B5532F;--td:#8F3F22;--c:#FAF5EA;--b:#EBDFC9;--k:#2B2724;--o:#6B7345;--m:#6E655C;--l:#DCCFB6}
+*{box-sizing:border-box;margin:0}body{font:17px/1.6 system-ui,sans-serif;background:var(--c);color:var(--k)}
+h1{font-family:Georgia,serif;font-size:clamp(1.9rem,5vw,3rem);line-height:1.15;margin:8px 0}h2{font-family:Georgia,serif;margin:22px 0 8px}
+header{position:sticky;top:0;background:var(--c);border-bottom:1px solid var(--l);z-index:3}
+nav,main{max-width:1100px;margin:0 auto;padding:12px 20px}nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.logo{font:700 1.5rem Georgia,serif;color:var(--t);margin-right:auto;text-decoration:none}
+button,input,select,textarea{font:inherit}.b{background:var(--t);color:#fff;border:0;border-radius:6px;padding:9px 18px;cursor:pointer;font-weight:600}.b:hover{background:var(--td)}
+.chip{border:1px solid var(--l);background:#fff;border-radius:99px;padding:5px 14px;cursor:pointer}.chip.on{background:var(--o);color:#fff;border-color:var(--o)}
+.lnk{background:none;border:0;color:var(--t);text-decoration:underline;cursor:pointer}
+input,select,textarea{padding:9px 12px;border:1px solid var(--l);border-radius:6px;background:#fff;width:100%;margin:4px 0}
+form{max-width:480px;margin:10px 0}form.row,.row{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;max-width:none}form.row input{flex:1;margin:0;width:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border:1px solid var(--l);border-radius:6px;padding:12px;display:flex;flex-direction:column;gap:4px}
+.art{height:150px;border-radius:4px;overflow:hidden}.art img{width:100%;height:100%;object-fit:cover}
+.pr{display:flex;justify-content:space-between;align-items:center;margin-top:auto}.m{color:var(--m);font-size:.92rem}
+.li{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--l);flex-wrap:wrap}
+.box{background:var(--b);border-radius:6px;padding:14px;margin:10px 0}.err{color:var(--td)}
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--k);color:#fff;padding:10px 20px;border-radius:6px;opacity:0;transition:opacity .2s;pointer-events:none}#toast.on{opacity:1}
+:focus-visible{outline:3px solid var(--o);outline-offset:2px}
